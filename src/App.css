@@ -1,0 +1,158 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 350px;
+  padding: 10px;
+  background-color: inherit;
+  border-radius: 5px;
+}
+
+.notes-input {
+  width: fit-content;
+  margin: auto;
+}
+
+.search-input {
+  width: fit-content;
+  margin: auto;
+}
+
+form {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 350px;
+  padding: 10px;
+  background-color: inherit;
+  border-radius: 5px;
+}
+
+.input-text-body {
+  height: 100px;
+}
+
+.button {
+  border-style: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #888888;
+}
+
+.input-text-submit {
+
+}
+
+label {
+  font-weight: bold;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: minmax(250px, 350px) minmax(250px, 350px) minmax(250px, 350px) minmax(250px, 350px);
+  width: fit-content;
+}
+
+.note-card {
+  border: 2px black solid;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+}
+
+.note-card > h3, .note-card > p  {
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.card-action {
+  display: flex;
+  margin-top: 10px;
+}
+
+.button-delete, .content-action-delete {
+  color: red;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-archive, .content-action-archive {
+  color: yellow;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.button-restore, .content-action-restore {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.navigation-link {
+  display: grid;
+  grid-template-columns: minmax(250px, 300px) minmax(250px, 300px) minmax(250px, 300px);
+  width: fit-content;
+  margin: auto;
+}
+
+.content-detail-note {
+  width: 70%;
+  margin: auto;
+}
+
+.content-action {
+  display: flex;
+}
